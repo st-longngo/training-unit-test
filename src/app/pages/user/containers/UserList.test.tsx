@@ -1,5 +1,5 @@
 import React from 'react';
-import {  waitFor, fireEvent } from '@testing-library/react';
+import { waitFor, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { UserService } from '../../../core/services/user.service';
 import renderWithProviders from '@app/shared/utils/renderWithProviders';
@@ -140,4 +140,5 @@ describe('<UserList />', () => {
       expect(queryByTestId('loading')).toBeNull();
     });
   });
+
 });

@@ -4,6 +4,7 @@ import { watchAuth } from '@app/core/auth/auth.middleware';
 
 export default function* appMiddleware() {
   yield all([
-    watchAuth()
+    watchAuth(),
+    watchUsers(),
   ]);
 }
